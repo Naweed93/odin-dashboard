@@ -58,7 +58,11 @@
 .privacy{
     grid-row-start: 10;
 }
+.main{
+    background-color: #f1f1f1
+}
 .header{
+    background-color: #fff;
     box-shadow: 0 5px 10px -2px #ddd;
 }
 .search-row{
@@ -111,4 +115,79 @@
 }
 .notifications a:hover{
     background-color: #4e6787;
+}
+.content{
+    padding: 20px 20px 50px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+h2{
+    padding: 0 0 20px 0;
+        font-size: 20px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+.projects>div{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 200px;
+    position: relative;
+    border-left: 10px solid #f59e0b;
+}
+h3{
+    padding: 0 0 5px 0;
+}
+.projects>div>p{
+    color: #646464;
+}
+.project-icons{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: end;
+    right: 30px;
+}
+.announcements{
+    padding-bottom: 40px;
+}
+.announcement-items{
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+h4{
+    padding-bottom: 5px;
+}
+.announcement-items > div {
+    padding:10px;
+    border-bottom: 1px solid #e3e0e0;
+}
+.announcement-items > div:last-child{
+    border: none;
+}
+.announcement-items > div > p{
+    font-size: 13px;
+    color: #646464;
+}
+.trending-items{
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.trending-items>div>div>p:last-child{
+    color: #646464;
+    padding: 3px 0;
+}
+.trending-items>div{
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    padding: 15px 0;
 }
